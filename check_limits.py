@@ -1,16 +1,27 @@
-
-def battery_is_ok(temperature, soc, charge_rate):
-  if temperature < 0 or temperature > 45:
+def isTemperatureInRange(value):
+  if (value < 0 or value > 45):
     print('Temperature is out of range!')
     return False
-  elif soc < 20 or soc > 80:
-    print('State of Charge is out of range!')
+  else:
+    return True
+  
+def issocInRange(value):
+  if (value < 20 or value > 80):
+    print('soc is out of range!')
     return False
-  elif charge_rate > 0.8:
-    print('Charge rate is out of range!')
+  else:
+    return True
+  
+def ischarge_rateInRange(value):
+  if value > 0.8:
+    print('charge_rate is out of range!')
     return False
+  else:
+    return True
+  
 
-  return True
+def battery_is_ok(temperature, soc, charge_rate):
+  return isTemperatureInRange(temperature) and issocInRange(soc) and ischarge_rateInRange(charge_rate)
 
 
 if __name__ == '__main__':
