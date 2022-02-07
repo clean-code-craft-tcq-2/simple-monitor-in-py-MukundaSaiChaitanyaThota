@@ -1,19 +1,19 @@
-def isTemperatureInRange(value):
-  if (value < 0 or value > 45):
+def isTemperatureInRange(temperature):
+  if (temperature < 0 or temperature > 45):
     print('Temperature is out of range!')
     return False
   else:
     return True
   
-def issocInRange(value):
-  if (value < 20 or value > 80):
+def issocInRange(soc):
+  if (soc < 20 or soc > 80):
     print('soc is out of range!')
     return False
   else:
     return True
   
-def ischarge_rateInRange(value):
-  if value > 0.8:
+def ischarge_rateInRange(charge_rate):
+  if charge_rate > 0.8:
     print('charge_rate is out of range!')
     return False
   else:
