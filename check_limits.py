@@ -43,7 +43,7 @@ return Checktemperature and Checksoc and Checkcharge_rate
 
 
 if __name__ == '__main__':
-  assert(battery_is_ok('25c', 70, 0.7) is True)
-  assert(battery_is_ok('50c', 85, 0) is False)
-  assert(battery_is_ok('100f', 85, 0) is False)
-  assert(battery_is_ok('271k', 85, 0) is False)
+  assert(battery_is_ok("25c", 70, 0.7) is True)
+  assert(battery_is_ok("50c", 85, 0) is False)
+  assert(battery_is_ok("100f", 85, 0) is False)
+  assert(battery_is_ok("271k", 85, 0) is False)
