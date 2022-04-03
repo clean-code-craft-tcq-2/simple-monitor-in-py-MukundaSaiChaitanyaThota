@@ -35,11 +35,11 @@ def convertTocelsius(temperature):
 
   
 def battery_is_ok(temperature, soc, charge_rate):
-Checktemperature=isTemperatureInRange(temperature)
-Checksoc=issocInRange(soc)
-Checkcharge_rate=ischarge_rateInRange(charge_rate)
+  Checktemperature=isTemperatureInRange(temperature)
+  Checksoc=issocInRange(soc)
+  Checkcharge_rate=ischarge_rateInRange(charge_rate)
   
-return Checktemperature and Checksoc and Checkcharge_rate
+  return Checktemperature and Checksoc and Checkcharge_rate
 
 
 if __name__ == '__main__':
