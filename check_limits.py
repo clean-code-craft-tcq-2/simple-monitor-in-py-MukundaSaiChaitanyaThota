@@ -3,7 +3,7 @@ def PrintoutofRange(parameter,value):
   
   
 def isTemperatureInRange(temperature):
-  temperatur=convertTocelsius(temperature)
+  temperature=convertTocelsius(temperature)
   if temperature < 0 :
     return False
   elif temperature > 45 :
